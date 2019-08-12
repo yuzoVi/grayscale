@@ -1,5 +1,5 @@
 .main-container{
-    width: 97vw;
+    width: 100vw;
     /* height:97vh; */
     display: flex;
     flex-direction: column;
@@ -13,10 +13,12 @@
 .first-image img{
     width:60%;
     justify-self:flex-start;
+    height: auto;
 }
 
 .first-image aside{
     width: 30%;
+    height: auto;
     margin-left:3rem;
     align-self:center;
     /* color:gray; */
@@ -34,8 +36,9 @@
 
 .vl {
     border-left: 6px solid #64a19d ;
-    height: 35%;
+    height: 150px;
     align-self:center;
+    margin:0 0.4rem 0 0;
   }
 
 .first-image{
@@ -43,6 +46,16 @@
     /* margin-left: 3rem; */
     width:85%;
     justify-content: flex-start;
+    height:auto;
+}
+
+@media(max-width:599px)
+{
+    .first-image aside{
+        margin: 0;
+        width:45%
+    }
+    
 }
 
 .four-images{
@@ -54,6 +67,7 @@
     flex-wrap:wrap;
     margin-top:2.3rem;
     background-color:#151515;
+    height:auto
 }
 
 .v2{
@@ -127,4 +141,60 @@
 .mont-img{
     align-self:flex-end;
     justify-self:flex-end;
+}
+
+@media(max-width:565px)
+{
+    .four-images{
+        flex-direction:column;
+        align-items: center;
+        /* justify-items: center; */
+    }
+
+    .misty-img{
+        order:-2;
+    }
+
+    .first{
+        order:2;
+    }
+
+    .misty-div{
+        width:100%;
+        margin-right:0px;
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .v2{
+        margin: 2rem 2rem 2rem 2rem;
+        width:30%
+    }
+
+
+    .mont-div{
+        width:100%;
+        margin:0;
+        text-align: center;
+    }
+
+    .mont-div h1{
+        text-align:center;
+    }
+
+    .mont-div p{
+        text-align:center;
+        margin-left:0;
+    }
+
+    .second{
+        display: none;
+    }
+
+    .mont-img{
+        justify-self:center;
+        align-self:center;
+        margin-top:2rem;
+    }
 }

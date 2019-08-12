@@ -1,9 +1,145 @@
-.subscribe-container{
-    width: 99vw;
-    height:200vh; 
-    background-image: linear-gradient(to bottom, rgba(119, 112, 112, 0.308) , rgba(12, 10, 11, 1) 65%),
+.footer-container{
+    width: 100vw;
+    height:auto; 
+    background-image: linear-gradient(180deg, rgba(63, 58, 58, 0.5) 30%, rgba(0,0,0,1) 52%),
 url('../imagens/bg-signup.jpg');
     background-repeat: no-repeat; 
-    background-size: 100% 100%, 100% ;
+    background-size: 100% 100%, 100% 60% ;
     display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color:white;
+    align-items: center;
+}
+
+.input-button>input{
+    width:33vw;
+    padding:0.8rem 0;
+    border-radius:3px;
+}
+
+.input-button{
+    display:flex;
+}
+
+.input-button div{
+    margin-left:0.5rem;
+    border-radius:3px;
+    background-color: #64a19d;
+    color: white;
+    padding:0.8rem 1.7rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+}
+
+.input-button input::placeholder{
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    padding-left:1.3rem;
+}
+
+.subscribe-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 0 15rem 0;
+}
+
+.subscribe-container>h1{
+    /* font-size:3rem; */
+    margin-bottom:3rem;
+    font-weight:400;
+}
+
+.contact-section{
+    display:flex;
+    width:70%;
+    /* justify-content: space-between; */
+    margin-bottom:3rem;
+    align-items: center;
+    justify-content:center;
+}
+
+.contact-section>div{
+    background-color:white;
+    color:black;
+    height: 12rem;
+    width:18rem;
+    border-radius:5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow:0px 4px #64a19d;
+    margin: 0 2rem;
+}
+
+.contact-section .v2{
+    border-bottom: 4px solid #64a19d ;
+    width: 20%;
+    align-self:center;
+    margin:1.3rem 0;
+}
+
+.contact-section h4{
+    letter-spacing: 0.125rem;
+    font-size:0.7rem;
+    margin-top:0.7rem;   
+}
+
+.contact-section span{
+    color:gray;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.contact-section i{
+    color:#64a19d;
+}
+
+@media (max-width: 900px)
+{
+    .contact-section{
+        flex-direction:column;
+        justify-items: center;
+        align-items:center;
+    }
+
+    .contact-section > div{
+        margin: 1rem 0px;
+    }
+}
+
+.social-media{
+    display:flex;
+    width:200px;
+    justify-content: center;
+    margin:3rem;
+}
+
+.social-media i{
+    font-size:1rem;
+    padding-top:10px;
+    color:gray;
+    /* margin: 0 2rem; */
+}
+
+
+.copyright{
+    color:gray;
+    margin-top:3rem;
+    margin-bottom:1rem;
+}
+
+.social-media div{
+    background-color:rgb(63, 59, 59);
+    border-radius:20px;
+    width:40px;
+    height:40px;
+    text-align:center;
+    margin: 0 0.5rem;
+}
+
+.contact-section .email{
+    color:rgb(47, 113, 156);
 }
