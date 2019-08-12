@@ -3,7 +3,7 @@
     flex-direction:column;
     width:100%;
     height:auto;
-    background-image: linear-gradient(180deg, rgba(37,36,36,0.3) 6%, rgba(0,0,0,1) 52%, rgba(36,36,34,1) 90%, rgba(58,58,53,1) 100%),url('../imagens/bg-masthead.jpg') ;
+    background-image: linear-gradient(180deg, rgba(37,36,36,0.3) 6%, rgba(0,0,0,1) 40%, rgba(36,36,34,1) 90%, rgba(58,58,53,1) 100%),url('../imagens/bg-masthead.jpg') ;
     background-repeat: no-repeat; 
     background-size: 100% 100%, 100% 50%;
     justify-content: space-between;
